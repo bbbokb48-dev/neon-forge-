@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Panier – NeonForge</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo"><span class="logo-icon">◆</span> Neon<span>Forge</span></a>
+      <nav class="nav">
+        <a href="index.html">Accueil</a>
+        <a href="collections.html#claviers">Claviers</a>
+        <a href="collections.html#casques">Casques</a>
+        <a href="collections.html#chaises">Chaises</a>
+        <a href="collections.html#souris">Souris</a>
+        <a href="collections.html#setup">Setup</a>
+        <a href="products.html">Tout</a>
+        <a href="about.html">À propos</a>
+        <a href="cart.html">Panier</a>
+      </nav>
+      <div class="header-actions">
+        <button class="icon-btn">⌕</button>
+        <a href="cart.html" class="icon-btn cart" title="Panier">🛒 <span class="cart-count">0</span></a>
+        <button class="menu-toggle">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <section class="page-header">
+    <div class="container">
+      <h1>Mon panier</h1>
+      <p>Finalise ta commande en toute sécurité</p>
+    </div>
+  </section>
+
+  <section class="cart-page">
+    <div class="container">
+      <div id="cart-empty" class="cart-empty" style="display:none;">
+        <h2>Ton panier est vide</h2>
+        <p>Ajoute des produits pour commencer.</p>
+        <a href="products.html" class="btn btn-primary" style="margin-top:20px;">Voir les produits</a>
+      </div>
+
+      <div class="cart-layout">
+        <div id="cart-items" class="cart-items"></div>
+
+        <div id="cart-summary" class="cart-summary" style="display:none;">
+          <h2>Récapitulatif</h2>
+          <div class="cart-row">
+            <span>Sous-total</span>
+            <span id="cart-subtotal">0,00 €</span>
+          </div>
+          <div class="cart-row">
+            <span>Livraison</span>
+            <span id="cart-shipping">5,90 €</span>
+          </div>
+          <div class="cart-row total">
+            <span>Total</span>
+            <span id="cart-total">0,00 €</span>
+          </div>
+          <p style="font-size:0.8rem;color:var(--text-muted);margin-top:8px;">Livraison offerte dès 79 €</p>
+
+          <div class="payment-methods">
+            <button class="pay-btn pay-btn-card" onclick="checkout('card')">
+              💳 Payer par carte bancaire
+            </button>
+            <button class="pay-btn pay-btn-paypal" onclick="checkout('paypal')">
+              🅿️ Payer avec PayPal
+            </button>
+            <button class="pay-btn pay-btn-apple" onclick="checkout('apple')">
+              Payer avec Apple Pay
+            </button>
+          </div>
+
+          <div class="secure-badges">
+            <span>🔒 Paiement sécurisé</span>
+            <span>🛡️ SSL</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo"><span class="logo-icon">◆</span> Neon<span>Forge</span></a>
+        <p>Accessoires gaming premium pour ceux qui veulent dominer.</p>
+      </div>
+      <div>
+        <h4>Boutique</h4>
+        <a href="collections.html">Collections</a>
+        <a href="products.html">Tous les produits</a>
+      </div>
+      <div>
+        <h4>Aide</h4>
+        <a href="contact.html">Contact</a>
+        <a href="#">Livraison</a>
+        <a href="#">Retours</a>
+      </div>
+      <div>
+        <h4>Légal</h4>
+        <a href="#">CGV</a>
+        <a href="#">Confidentialité</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 NeonForge. Tous droits réservés.</p>
+    </div>
+  </footer>
+
+  <script src="js/products.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

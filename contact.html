@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact – NeonForge</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo"><span class="logo-icon">◆</span> Neon<span>Forge</span></a>
+            <nav class="nav">
+        <a href="index.html">Accueil</a>
+        <a href="collections.html#claviers">Claviers</a>
+        <a href="collections.html#casques">Casques</a>
+        <a href="collections.html#chaises">Chaises</a>
+        <a href="collections.html#souris">Souris</a>
+        <a href="collections.html#setup">Setup</a>
+        <a href="products.html">Tout</a>
+        <a href="about.html">À propos</a>
+        <a href="cart.html">Panier</a>
+      </nav>
+      <div class="header-actions">
+        <button class="icon-btn">⌕</button>
+        <a href="cart.html" class="icon-btn cart" title="Panier">🛒 <span class="cart-count">0</span></a>
+        <button class="menu-toggle">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <section class="page-header">
+    <div class="container">
+      <h1>Contacte-nous</h1>
+      <p>Une question ? Un problème de commande ? On est là.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="contact-grid">
+        <div>
+          <form class="contact-form" onsubmit="event.preventDefault(); alert('Message envoyé (démo). On te répond sous 24h !'); this.reset();">
+            <label for="name">Nom</label>
+            <input type="text" id="name" name="name" required placeholder="Ton nom">
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required placeholder="ton@email.com">
+
+            <label for="subject">Sujet</label>
+            <input type="text" id="subject" name="subject" required placeholder="Commande, SAV, partenariat…">
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required placeholder="Dis-nous tout…"></textarea>
+
+            <button type="submit" class="btn btn-primary">Envoyer le message</button>
+          </form>
+        </div>
+        <div class="contact-info">
+          <h3>Infos pratiques</h3>
+          <p>📧 support@neonforge.fr</p>
+          <p>🕒 Lun–Ven : 9h–19h<br>Sam : 10h–16h</p>
+          <p>🚚 Livraison France : 48h<br>Retours gratuits sous 30 jours</p>
+          <p style="margin-top: 24px; color: var(--text-muted); font-size: 0.9rem;">
+            
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo"><span class="logo-icon">◆</span> Neon<span>Forge</span></a>
+        <p>Accessoires gaming premium pour ceux qui veulent dominer.</p>
+      </div>
+      <div>
+        <h4>Boutique</h4>
+        <a href="collections.html">Collections</a>
+        <a href="products.html">Tous les produits</a>
+        <a href="#">Nouveautés</a>
+        <a href="#">Promotions</a>
+      </div>
+      <div>
+        <h4>Aide</h4>
+        <a href="contact.html">Contact</a>
+        <a href="#">Livraison</a>
+        <a href="#">Retours</a>
+        <a href="#">FAQ</a>
+      </div>
+      <div>
+        <h4>Légal</h4>
+        <a href="#">CGV</a>
+        <a href="#">Mentions légales</a>
+        <a href="#">Confidentialité</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 NeonForge. Tous droits réservés.</p>
+    </div>
+  </footer>
+
+  <script src="js/products.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

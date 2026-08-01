@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tous les produits – NeonForge</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo"><span class="logo-icon">◆</span> Neon<span>Forge</span></a>
+            <nav class="nav">
+        <a href="index.html">Accueil</a>
+        <a href="collections.html#claviers">Claviers</a>
+        <a href="collections.html#casques">Casques</a>
+        <a href="collections.html#chaises">Chaises</a>
+        <a href="collections.html#souris">Souris</a>
+        <a href="collections.html#setup">Setup</a>
+        <a href="products.html" class="active">Tout</a>
+        <a href="about.html">À propos</a>
+        <a href="cart.html">Panier</a>
+      </nav>
+      <div class="header-actions">
+        <button class="icon-btn">⌕</button>
+        <a href="cart.html" class="icon-btn cart" title="Panier">🛒 <span class="cart-count">0</span></a>
+        <button class="menu-toggle">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <section class="page-header">
+    <div class="container">
+      <h1>Tous les produits</h1>
+      <p>39 produits gaming – claviers, casques, chaises, souris & setup</p>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top: 20px;">
+    <div class="container">
+      <div class="filters">
+        <button class="filter-btn active" data-filter="all">Tout</button>
+        <button class="filter-btn" data-filter="claviers">Claviers</button>
+        <button class="filter-btn" data-filter="casques">Casques</button>
+        <button class="filter-btn" data-filter="chaises">Chaises</button>
+        <button class="filter-btn" data-filter="souris">Souris</button>
+        <button class="filter-btn" data-filter="setup">Setup & Déco</button>
+      </div>
+      <div class="product-grid" id="all-products"></div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo"><span class="logo-icon">◆</span> Neon<span>Forge</span></a>
+        <p>Accessoires gaming premium pour ceux qui veulent dominer.</p>
+      </div>
+      <div>
+        <h4>Boutique</h4>
+        <a href="collections.html">Collections</a>
+        <a href="products.html">Tous les produits</a>
+        <a href="#">Nouveautés</a>
+        <a href="#">Promotions</a>
+      </div>
+      <div>
+        <h4>Aide</h4>
+        <a href="contact.html">Contact</a>
+        <a href="#">Livraison</a>
+        <a href="#">Retours</a>
+        <a href="#">FAQ</a>
+      </div>
+      <div>
+        <h4>Légal</h4>
+        <a href="#">CGV</a>
+        <a href="#">Mentions légales</a>
+        <a href="#">Confidentialité</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 NeonForge. Tous droits réservés.</p>
+    </div>
+  </footer>
+
+  <script src="js/products.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
